@@ -1,5 +1,6 @@
 package com.design.strategy;
 
+
 import java.util.Arrays;
 
 /**
@@ -19,9 +20,9 @@ public class Main {
 
         Sorter sorter =new Sorter();
         sorter.sort(cats,new CatWeightComparator());
-        System.out.println("冒泡排序结果: " + Arrays.toString(cats));
+        System.out.println("按照weight排序结果: " + Arrays.toString(cats));
         sorter.sort(cats,new CatHeightComparator());
-        System.out.println("冒泡排序结果: " + Arrays.toString(cats));
+        System.out.println("按照height排序结果: " + Arrays.toString(cats));
 
     }
 }
