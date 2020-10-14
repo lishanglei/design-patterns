@@ -16,7 +16,7 @@ package com.design.sigleton;
 public class Test6 {
 
     //静态变量,在初始化时只实例化一次
-    private static Test6 INSTANCE;
+    private static volatile Test6 INSTANCE;
 
     //私有的构造方法,拒绝外界通过new的方式实例化Test1
     private Test6() {
